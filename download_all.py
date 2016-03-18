@@ -7,8 +7,10 @@ from dateutil import parser
 import argparse
 import json
 
+api_key = 'a326a9e78e94a...'
+api_secret = 'a3d21aee...'
 
-Flickr.set_keys(api_key = 'a326a9e78e94a78379b5ee4e8e2c4b50', api_secret = 'a3d21aee66f6cbfb')
+Flickr.set_keys(api_key = api_key, api_secret = api_secret)
 
 
 def donwload_user(user_id, page_num=None):
