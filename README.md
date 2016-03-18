@@ -22,7 +22,7 @@ Downloads Flickr photo user.
 To use it you need to get your own Flickr API key here:
 https://www.flickr.com/services/api/misc.api_keys.html
 
-  download a given set:
+  download photo:
   > download_all.py -u https://www.flickr.com/photos/ericwong888 
 
 optional arguments:
