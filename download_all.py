@@ -57,7 +57,7 @@ def main():
         'To use it you need to get your own Flickr API key here:\n'
         'https://www.flickr.com/services/api/misc.api_keys.html\n'
         '\n'
-        '  download a given set:\n'
+        '  download user photo:\n'
         '  > {app} -u https://www.flickr.com/photos/ericwong888 \n'
         '\n'
         .format(app=sys.argv[0])
