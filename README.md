@@ -7,34 +7,34 @@ Requirements
 ============
 
 * [argparse](http://docs.python.org/2.7/library/argparse.html) (Python 2.7+)
-* [Python Dateutil](http://labix.org/python-dateutil)
 * [Python Flickr API](https://github.com/alexis-mignon/python-flickr-api/)
-* 
+
 
 Simple to use
 
 ```
 python download_all.py 
-usage: download_all.py [-h] [-u URL] [-p PAGE]
+usage: download_all.py [-h] [-u URL] [-p PAGE] [-d DIRNAME]
 
 Downloads Flickr photo user.
 
 To use it you need to get your own Flickr API key here:
 https://www.flickr.com/services/api/misc.api_keys.html
 
-  download photo:
-  > download_all.py -u https://www.flickr.com/photos/ericwong888 
+  download user photo:
+  > download_all.py -u https://www.flickr.com/photos/ericwong888
 
 optional arguments:
   -h, --help            show this help message and exit
   -u URL, --url URL     Download the given user
   -p PAGE, --page PAGE  Number page for download
-
+  -d DIRNAME, --dirname DIRNAME
+                        Directory for save
 ```
 
 ==Example==
 ```
-python download_all.py -u https://www.flickr.com/photos/ericwong888 -p 2
+python download_all.py -u https://www.flickr.com/photos/ericwong888 -p 2 -d /data/photos
 ```
 
 ==Response==
@@ -43,7 +43,7 @@ python download_all.py -u https://www.flickr.com/photos/ericwong888 -p 2
 total images 1588
 total pages 16
 num page for download 2
-make dirname 99589174_N04
+make dirname /data/photos/99589174_N04
 https://farm2.staticflickr.com/1677/25235145833_7aaa9b26d2_h.jpg
 https://farm2.staticflickr.com/1457/25833425016_e0d2343b37_h.jpg
 https://farm2.staticflickr.com/1620/25558757290_fd8cf1b0a3_h.jpg
